@@ -1,7 +1,7 @@
 {
 	"plugin": {
 		"name": "BINoculars",
-		"type": ["core", "ui", "architecture", "binaryview"],
+		"type": ["ui"],
 		"api": "python2",
 		"description": "Plugin for Binary Ninja to centralize features useful in static analysis.",
 		"longdescription": "Plugin for Binary Ninja to centralize features useful in static analysis.",
