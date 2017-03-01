@@ -15,11 +15,8 @@ class BinocularsListComments(BackgroundTaskThread):
         content = ""
         for function in self.bv.functions:
             for address, comment in function.comments.iteritems():
-                content += "Address: 0x%x\n" %(int(address))
-                content += comment 
-                content += "\n"
-                content += "=" * 80
-                content += "\n\n"
+                content += ("  0x%x  " %(int(address))).center(80, '=') + "\n"
+                content += comment + "\n\n"
 
         show_plain_text_report("Binoculars List Comments", content)
 
